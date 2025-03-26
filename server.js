@@ -3,8 +3,8 @@ const express = require("express");
 const axios = require("axios");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-const API_KEY = process.env["nawaz-hacker"];
+const PORT = process.env.PORT || 3000; // PORT को 3000 पर सेट किया
+const API_KEY = process.env["nawaz-hacker"]; // API_KEY को सही से एक्सेस किया
 
 app.use(express.json());
 
@@ -35,6 +35,7 @@ app.post("/chat", async (req, res) => {
 
     res.json({ reply: response.data.choices[0].message.content });
   } catch (error) {
+    console.error("Error:", error.response ? error.response.data : error.message);
     res.status(500).json({ error: "Something went wrong!" });
   }
 });
