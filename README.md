@@ -1,15 +1,14 @@
-# Nawaz-Hacker-API (Baby AI)
+# Nawaz Gemini AI API
 
-🚀 **Baby AI API** - Nawaz Boss द्वारा बनाई गई AI API, जो पूरी तरह से ChatGPT जैसी काम करती है!
+## Setup
 
-## 🌟 Features:
-- ✅ **AI Chatbot (Baby AI)** - Context को याद रखता है
-- ✅ **API Key Authentication** - API Key: `nawaz-hacker`
-- ✅ **Custom Branding** - हर जवाब में "Nawaz Boss" का नाम आएगा
-- ✅ **Secure & Fast** - Render पर आसानी से Deploy कर सकते हैं
+1. npm install  
+2. Create `.env` file → Add your Gemini API key like:  
+GEMINI_API_KEY=your_gemini_api_key_here  
 
-## 🔧 **Installation & Setup**
-### 1️⃣ **Clone the Repository**
-```sh
-git clone https://github.com/YourGitHubUsername/nawaz-hacker-api.git
-cd nawaz-hacker-api
+3. Start Server  
+npm start  
+
+## API Usage:
+
+https://your-domain.onrender.com/api?message=hello
