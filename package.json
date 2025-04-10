@@ -1,14 +1,13 @@
 {
   "name": "nawaz-hacker-api",
   "version": "1.0.0",
-  "description": "Nawaz Boss की Custom AI API",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "dotenv": "^16.3.1",
-    "axios": "^1.4.0"
+    "axios": "^1.6.7",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
   }
 }
